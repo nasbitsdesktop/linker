@@ -1,18 +1,19 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #fce4ec; /* Pastel pink */
+    background-color: #ffeee2; /* Pastel background */
     color: #333;
     margin: 0;
     padding: 0;
 }
 
 .container {
-    max-width: 800px;
+    max-width: 600px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #fff;
+    background-color: #ffeee2; /* Pastel background */
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     border-radius: 12px;
+    border: 2px solid #000; /* Black outline */
 }
 
 header {
@@ -23,13 +24,13 @@ header {
 header h1 {
     margin: 0;
     font-size: 28px;
-    color: #ec407a; /* Darker pastel pink */
+    color: #000; /* Black text */
 }
 
 header p {
     margin: 10px 0 0;
     font-size: 18px;
-    color: #ad1457; /* Darker pink */
+    color: #000; /* Black text */
 }
 
 main {
@@ -38,35 +39,38 @@ main {
 
 .link-grid {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column; /* Stack tiles top-to-bottom */
+    align-items: center;
     gap: 20px;
 }
 
 .tile {
     display: block;
-    width: 200px;
-    height: 150px;
-    background-color: #f8bbd0; /* Light pastel pink */
-    color: #333;
+    width: 100%; /* Full width of the container */
+    max-width: 400px; /* Set a max width */
+    height: 100px; /* Increased height for wider tiles */
+    background-color: #ffeee2; /* Tile color */
+    color: #000; /* Black text */
     text-decoration: none;
     padding: 20px;
+    border: 2px solid #000; /* Black outline */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, background-color 0.3s ease;
     font-size: 18px;
     font-weight: bold;
     line-height: 1.5;
+    text-align: center;
 }
 
 .tile:hover {
-    transform: scale(1.1);
-    background-color: #f48fb1; /* Slightly darker pink */
+    transform: scale(1.05);
+    background-color: #f8bbd0; /* Slightly darker pink for hover */
 }
 
 footer {
     text-align: center;
     margin-top: 30px;
     font-size: 16px;
-    color: #aaa;
+    color: #000; /* Black text */
 }
